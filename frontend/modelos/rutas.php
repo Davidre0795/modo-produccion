@@ -9,7 +9,7 @@ class Ruta{
 	public function ctrRuta(){
 
 		// return "http://localhost/modo-desarrollo/frontend/";
-		return "http://35.196.228.81//frontend/";
+		return "http://35.196.228.81/frontend/";
 	
 	}
 
@@ -20,7 +20,7 @@ class Ruta{
 	public function ctrRutaServidor(){
 
 		// return "http://localhost/modo-desarrollo/backend/";
-		return "http://35.196.228.81//backend/";
+		return "http://35.196.228.81/backend/";
 	
 	}
 
