@@ -14,7 +14,7 @@ session_start();
   <link rel="icon" href="vistas/img/plantilla/icono.png">
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  
+
   <!--=====================================
   PLUGINS DE CSS
   ======================================-->
@@ -29,7 +29,7 @@ session_start();
 
   <!-- Theme style -->
   <link rel="stylesheet" href="vistas/dist/css/AdminLTE.min.css">
-  
+
   <link rel="stylesheet" href="vistas/dist/css/skins/skin-blue.min.css">
 
   <!-- iCheck -->
@@ -106,7 +106,7 @@ session_start();
   <script src="vistas/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 
   <!-- ChartJS -->
-  <script src="vistas/bower_components/Chart.js/Chart.js"></script>
+  <script src="vistas/bower_components/chart.js/Chart.js"></script>
 
   <!-- SweetAlert 2 https://sweetalert2.github.io/-->
   <script src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script>
@@ -201,7 +201,7 @@ session_start();
 
  }
 
- 
+
 ?>
 
 <!--=====================================
