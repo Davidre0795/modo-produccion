@@ -8,13 +8,13 @@
 
 	<?php
 
-		// session_start();
+		session_start();
 
-		// $servidor = Ruta::ctrRutaServidor();
+		$servidor = Ruta::ctrRutaServidor();
 
 		$plantilla = ControladorPlantilla::ctrEstiloPlantilla();
 
-		// echo '<link rel="icon" href="'.$servidor.$plantilla["icono"].'">';
+		echo '<link rel="icon" href="'.$servidor.$plantilla["icono"].'">';
 
 		/*=============================================
 		MANTENER LA RUTA FIJA DEL PROYECTO
@@ -26,29 +26,29 @@
 		=============================================*/
 
 		
-		// $rutas = array();
+		$rutas = array();
 
-		// if(isset($_GET["ruta"])){
+		if(isset($_GET["ruta"])){
 
-		// 	$rutas = explode("/", $_GET["ruta"]);
+			$rutas = explode("/", $_GET["ruta"]);
 
-		// 	$ruta = $rutas[0];
+			$ruta = $rutas[0];
 
-		// }else{
+		}else{
 
-		// 	$ruta = "inicio";
+			$ruta = "inicio";
 
-		// }
+		}
 
-		// $cabeceras = ControladorPlantilla::ctrTraerCabeceras($ruta);
+		$cabeceras = ControladorPlantilla::ctrTraerCabeceras($ruta);
 		
-		// if(!$cabeceras["ruta"]){
+		if(!$cabeceras["ruta"]){
 
-		// 	$ruta = "inicio";
+			$ruta = "inicio";
 
-		// 	$cabeceras = ControladorPlantilla::ctrTraerCabeceras($ruta);
+			$cabeceras = ControladorPlantilla::ctrTraerCabeceras($ruta);
 
-		// }
+		}
 
 	?> 
 
@@ -56,44 +56,44 @@
 	Marcado HTML5
 	======================================-->
 
-	<!-- <meta name="title" content="< ?php echo  $cabeceras['titulo']; ?>">
+	<meta name="title" content="< ?php echo  $cabeceras['titulo']; ?>">
 
 	<meta name="description" content="< ?php echo  $cabeceras['descripcion']; ?>">
 
 	<meta name="keyword" content="< ?php echo  $cabeceras['palabrasClaves']; ?>">
 
-	<title>< ?php echo  $cabeceras['titulo']; ?></title> -->
+	<title><?php echo  $cabeceras['titulo']; ?></title>
 
 	<!--=====================================
 	Marcado de Open Graph FACEBOOK
 	======================================-->
 
-	<!-- <meta property="og:title"   content="< ?php echo $cabeceras['titulo'];?>">
+	<meta property="og:title"   content="< ?php echo $cabeceras['titulo'];?>">
 	<meta property="og:url" content="< ?php echo $url.$cabeceras['ruta'];?>">
 	<meta property="og:description" content="< ?php echo $cabeceras['descripcion'];?>">
 	<meta property="og:image"  content="< ?php echo $servidor.$cabeceras['portada'];?>">
 	<meta property="og:type"  content="website">	
 	<meta property="og:site_name" content="Tu logo">
-	<meta property="og:locale" content="es_CO"> -->
+	<meta property="og:locale" content="es_CO">
 
 	<!--=====================================
 	Marcado para DATOS ESTRUCTURADOS GOOGLE
 	======================================-->
 	
-	<!-- <meta itemprop="name" content="< ?php echo $cabeceras['titulo'];?>">
+	<meta itemprop="name" content="< ?php echo $cabeceras['titulo'];?>">
 	<meta itemprop="url" content="< ?php echo $url.$cabeceras['ruta'];?>">
 	<meta itemprop="description" content="< ?php echo $cabeceras['descripcion'];?>">
-	<meta itemprop="image" content="< ?php echo $servidor.$cabeceras['portada'];?>"> -->
+	<meta itemprop="image" content="< ?php echo $servidor.$cabeceras['portada'];?>">
 
 	<!--=====================================
 	Marcado de TWITTER
 	======================================-->
-	<!-- <meta name="twitter:card" content="summary">
+	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="< ?php echo $cabeceras['titulo'];?>">
 	<meta name="twitter:url" content="< ?php echo $url.$cabeceras['ruta'];?>">
 	<meta name="twitter:description" content="< ?php echo $cabeceras['descripcion'];?>">
 	<meta name="twitter:image" content="< ?php echo $servidor.$cabeceras['portada'];?>">
-	<meta name="twitter:site" content="@tu-usuario"> -->
+	<meta name="twitter:site" content="@tu-usuario">
 
 
 	<!--=====================================
@@ -164,7 +164,7 @@
 	Pixel de Facebook
 	======================================-->
 
-	<!-- < ?php echo $plantilla["pixelFacebook"]; ?> -->
+	<?php echo $plantilla["pixelFacebook"]; ?>
 
 </head>
 
@@ -182,121 +182,121 @@ include "modulos/cabezote.php";
 CONTENIDO DINÁMICO
 =============================================*/
 
-// $rutas = array();
-// $ruta = null;
-// $infoProducto = null;
+$rutas = array();
+$ruta = null;
+$infoProducto = null;
 
-// if(isset($_GET["ruta"])){
+if(isset($_GET["ruta"])){
 
-// 	$rutas = explode("/", $_GET["ruta"]);
+	$rutas = explode("/", $_GET["ruta"]);
 
-// 	$item = "ruta";
-// 	$valor =  $rutas[0];
+	$item = "ruta";
+	$valor =  $rutas[0];
 
 // 	/*=============================================
 // 	URL'S AMIGABLES DE CATEGORÍAS
 // 	=============================================*/
 
-// 	$rutaCategorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
+	$rutaCategorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
 
-// 	if($rutas[0] == $rutaCategorias["ruta"] && $rutaCategorias["estado"] == 1){
+	if($rutas[0] == $rutaCategorias["ruta"] && $rutaCategorias["estado"] == 1){
 
-// 		$ruta = $rutas[0];
+		$ruta = $rutas[0];
 
-// 	}
+	}
 
 // 	/*=============================================
 // 	URL'S AMIGABLES DE SUBCATEGORÍAS
 // 	=============================================*/
 
-// 	$rutaSubCategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
+	$rutaSubCategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
 
-// 	foreach ($rutaSubCategorias as $key => $value) {
+	foreach ($rutaSubCategorias as $key => $value) {
 		
-// 		if($rutas[0] == $value["ruta"] && $value["estado"] == 1){
+		if($rutas[0] == $value["ruta"] && $value["estado"] == 1){
 
-// 			$ruta = $rutas[0];
+			$ruta = $rutas[0];
 
-// 		}
+		}
 
-// 	}
+	}
 
 // 	/*=============================================
 // 	URL'S AMIGABLES DE PRODUCTOS
 // 	=============================================*/
 
-// 	$rutaProductos = ControladorProductos::ctrMostrarInfoProducto($item, $valor);
+	$rutaProductos = ControladorProductos::ctrMostrarInfoProducto($item, $valor);
 	
-// 	if($rutas[0] == $rutaProductos["ruta"] && $rutaProductos["estado"] == 1){
+	if($rutas[0] == $rutaProductos["ruta"] && $rutaProductos["estado"] == 1){
 
-// 		$infoProducto = $rutas[0];
+		$infoProducto = $rutas[0];
 
-// 	}
+	}
 
 // 	/*=============================================
 // 	LISTA BLANCA DE URL'S AMIGABLES
 // 	=============================================*/
 
-// 	if($ruta != null || $rutas[0] == "articulos-gratis" || $rutas[0] == "lo-mas-vendido" || $rutas[0] == "lo-mas-visto"){
+	if($ruta != null || $rutas[0] == "articulos-gratis" || $rutas[0] == "lo-mas-vendido" || $rutas[0] == "lo-mas-visto"){
 
-// 		include "modulos/productos.php";
+		include "modulos/productos.php";
 
-// 	}else if($infoProducto != null){
+	}else if($infoProducto != null){
 
-// 		include "modulos/infoproducto.php";
+		include "modulos/infoproducto.php";
 
-// 	}else if($rutas[0] == "buscador" || $rutas[0] == "verificar" || $rutas[0] == "salir" || $rutas[0] == "perfil" || $rutas[0] == "carrito-de-compras" || $rutas[0] == "error" || $rutas[0] == "finalizar-compra" || $rutas[0] == "curso" || $rutas[0] == "ofertas"){
+	}else if($rutas[0] == "buscador" || $rutas[0] == "verificar" || $rutas[0] == "salir" || $rutas[0] == "perfil" || $rutas[0] == "carrito-de-compras" || $rutas[0] == "error" || $rutas[0] == "finalizar-compra" || $rutas[0] == "curso" || $rutas[0] == "ofertas"){
 
-// 		include "modulos/".$rutas[0].".php";
+		include "modulos/".$rutas[0].".php";
 
-// 	}else if($rutas[0] == "inicio"){
+	}else if($rutas[0] == "inicio"){
 
-// 		include "modulos/slide.php";
+		include "modulos/slide.php";
 
-// 		include "modulos/destacados.php";
+		include "modulos/destacados.php";
 
-// 	}else{
+	}else{
 
-// 		include "modulos/error404.php";
+		include "modulos/error404.php";
 
-// 	}
+	}
 
-// }else{
+}else{
 
-// 	include "modulos/slide.php";
+	include "modulos/slide.php";
 
-// 	include "modulos/destacados.php";
+	include "modulos/destacados.php";
 
-// 	include "modulos/visitas.php";
+	include "modulos/visitas.php";
 
-// }
+}
 
 
-// include "modulos/footer.php";
+include "modulos/footer.php";
 
 ?>
 
 
-<!-- <input type="hidden" value="< ?php echo $url; ?>" id="rutaOculta"> -->
+<input type="hidden" value="<?php echo $url; ?>" id="rutaOculta">
 <!--=====================================
 JAVASCRIPT PERSONALIZADO
 ======================================-->
 
-<!-- <script src="< ?php echo $url; ?>vistas/js/cabezote.js"></script>
-<script src="< ?php echo $url; ?>vistas/js/plantilla.js"></script>
-<script src="< ?php echo $url; ?>vistas/js/slide.js"></script>
-<script src="< ?php echo $url; ?>vistas/js/buscador.js"></script>
-<script src="< ?php echo $url; ?>vistas/js/infoproducto.js"></script>
-<script src="< ?php echo $url; ?>vistas/js/usuarios.js"></script>
-<script src="< ?php echo $url; ?>vistas/js/registroFacebook.js"></script>
-<script src="< ?php echo $url; ?>vistas/js/carrito-de-compras.js"></script>
-<script src="< ?php echo $url; ?>vistas/js/visitas.js"></script>  -->
+<script src="<?php echo $url; ?>vistas/js/cabezote.js"></script>
+<script src="<?php echo $url; ?>vistas/js/plantilla.js"></script>
+<script src="<?php echo $url; ?>vistas/js/slide.js"></script>
+<script src="<?php echo $url; ?>vistas/js/buscador.js"></script>
+<script src="<?php echo $url; ?>vistas/js/infoproducto.js"></script>
+<script src="<?php echo $url; ?>vistas/js/usuarios.js"></script>
+<script src="<?php echo $url; ?>vistas/js/registroFacebook.js"></script>
+<!-- <script src="< ?php echo $url; ?>vistas/js/carrito-de-compras.js"></script>  -->
+<script src="<?php echo $url; ?>vistas/js/visitas.js"></script> 
 
 <!--=====================================
 https://developers.facebook.com/
 ======================================-->
 
-<!-- < ?php echo $plantilla["apiFacebook"]; ?>
+< ?php echo $plantilla["apiFacebook"]; ?>
 
 <script>
 
@@ -340,7 +340,7 @@ https://developers.facebook.com/
 	GOOGLE ANALYTICS
 	======================================--*/
 
-	< ?php echo $plantilla["googleAnalytics"]; ?> -->
+	<?php echo $plantilla["googleAnalytics"]; ?>
 
 
 
