@@ -296,7 +296,7 @@ JAVASCRIPT PERSONALIZADO
 https://developers.facebook.com/
 ======================================-->
 
-< ?php echo $plantilla["apiFacebook"]; ?>
+<?php echo $plantilla["apiFacebook"]; ?>
 
 <script>
 
