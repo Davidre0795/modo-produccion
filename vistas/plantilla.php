@@ -12,7 +12,7 @@
 
 		// $servidor = Ruta::ctrRutaServidor();
 
-		// $plantilla = ControladorPlantilla::ctrEstiloPlantilla();
+		$plantilla = ControladorPlantilla::ctrEstiloPlantilla();
 
 		// echo '<link rel="icon" href="'.$servidor.$plantilla["icono"].'">';
 
