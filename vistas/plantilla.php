@@ -176,7 +176,7 @@
 CABEZOTE
 =============================================*/
 
-include "modulos/cabezote.html.php";
+include "modulos/cabezote.php";
 
 /*=============================================
 CONTENIDO DINÁMICO
