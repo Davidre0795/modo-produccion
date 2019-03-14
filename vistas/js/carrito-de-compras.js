@@ -830,7 +830,7 @@ $("#cambiarDivisa").change(function(){
 
 	$.ajax({
 
-		url: "http://free.currencyconverterapi.com/api/v3/convert?q="+divisaBase+"_"+divisa+"&compact=y",
+		url: "http://free.currencyconverterapi.com/api/v6/convert?q="+divisaBase+"_"+divisa+"&compact=y&apiKey=a01ebaf9a1c69eb4ff79",
 		type:"GET",
 		cache: false,
 	    contentType: false,

@@ -97,7 +97,7 @@ if(isset($_POST["divisa"])){
 
 		$verificarProductos = ControladorProductos::ctrMostrarInfoProducto($item, $valor);
 
-		$divisa = file_get_contents("http://free.currencyconverterapi.com/api/v3/convert?q=USD_".$_POST["divisa"]."&compact=y");
+		$divisa = file_get_contents("http://free.currencyconverterapi.com/api/v6/convert?q=USD_".$_POST["divisa"]."&compact=y&apiKey=a01ebaf9a1c69eb4ff79");
 
 		$jsonDivisa = json_decode($divisa, true);
 
