@@ -22,7 +22,4 @@ require_once "extensiones/PHPMailer/PHPMailerAutoload.php";
 require_once "extensiones/vendor/autoload.php";
 
 $plantilla = new ControladorPlantilla();
-
-echo $plantilla;
-
 $plantilla -> plantilla();
