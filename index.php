@@ -1,5 +1,5 @@
 <?php
-escho "hola";
+echo "hola";
   
 require_once "controladores/plantilla.controlador.php";
 require_once "controladores/productos.controlador.php";
