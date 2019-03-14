@@ -6,51 +6,51 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<!-- < ?php
+	<?php
 
-		session_start();
+		// session_start();
 
-		$servidor = Ruta::ctrRutaServidor();
+		// $servidor = Ruta::ctrRutaServidor();
 
-		$plantilla = ControladorPlantilla::ctrEstiloPlantilla();
+		// $plantilla = ControladorPlantilla::ctrEstiloPlantilla();
 
-		echo '<link rel="icon" href="'.$servidor.$plantilla["icono"].'">';
+		// echo '<link rel="icon" href="'.$servidor.$plantilla["icono"].'">';
 
 		/*=============================================
 		MANTENER LA RUTA FIJA DEL PROYECTO
 		=============================================*/
-		
-		$url = Ruta::ctrRuta();
+		 $url = Ruta::ctrRuta(); 
 
 		/*=============================================
 		MARCADO DE CABECERA
 		=============================================*/
 
-		$rutas = array();
-
-		if(isset($_GET["ruta"])){
-
-			$rutas = explode("/", $_GET["ruta"]);
-
-			$ruta = $rutas[0];
-
-		}else{
-
-			$ruta = "inicio";
-
-		}
-
-		$cabeceras = ControladorPlantilla::ctrTraerCabeceras($ruta);
 		
-		if(!$cabeceras["ruta"]){
+		// $rutas = array();
 
-			$ruta = "inicio";
+		// if(isset($_GET["ruta"])){
 
-			$cabeceras = ControladorPlantilla::ctrTraerCabeceras($ruta);
+		// 	$rutas = explode("/", $_GET["ruta"]);
 
-		}
+		// 	$ruta = $rutas[0];
 
-	?> -->
+		// }else{
+
+		// 	$ruta = "inicio";
+
+		// }
+
+		// $cabeceras = ControladorPlantilla::ctrTraerCabeceras($ruta);
+		
+		// if(!$cabeceras["ruta"]){
+
+		// 	$ruta = "inicio";
+
+		// 	$cabeceras = ControladorPlantilla::ctrTraerCabeceras($ruta);
+
+		// }
+
+	?> 
 
 	<!--=====================================
 	Marcado HTML5
@@ -118,11 +118,11 @@
 	HOJAS DE ESTILO PERSONALIZADAS
 	======================================-->
 	<!-- 
-	<link rel="stylesheet" href="< ?php echo $url; ?>vistas/css/plantilla.css">
+	<link rel="stylesheet" href="< ?php echo $url; ?>vistas/css/plantilla.css">-->
 
-	<link rel="stylesheet" href="< ?php echo $url; ?>vistas/css/cabezote.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>vistas/css/cabezote.css">
 
-	<link rel="stylesheet" href="< ?php echo $url; ?>vistas/css/slide.css">
+	<!-- <link rel="stylesheet" href="< ?php echo $url; ?>vistas/css/slide.css">
 
 	<link rel="stylesheet" href="< ?php echo $url; ?>vistas/css/productos.css">
 
