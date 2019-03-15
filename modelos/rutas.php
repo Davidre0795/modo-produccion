@@ -8,7 +8,7 @@ class Ruta{
 
 	public function ctrRuta(){
 
-		return "http://www.jimserenunclip.com/";
+		return "https://www.jimserenunclip.com/";
 	
 	}
 
@@ -18,7 +18,7 @@ class Ruta{
 
 	public function ctrRutaServidor(){
 
-		return "http://www.jimserenunclip.com/backend/";
+		return "https://www.jimserenunclip.com/backend/";
 	
 	}
 
