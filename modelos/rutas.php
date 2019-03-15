@@ -8,7 +8,7 @@ class Ruta{
 
 	public function ctrRuta(){
 
-		return "http://104.197.230.142/";
+		return "http://104.197.218.184/";
 	
 	}
 
@@ -18,7 +18,7 @@ class Ruta{
 
 	public function ctrRutaServidor(){
 
-		return "http://104.197.230.142/backend/";
+		return "http://104.197.218.184/backend/";
 	
 	}
 
