@@ -142,7 +142,7 @@ FINAL
 
 <div class="container-fluid final">
 	
-	<div class="container">
+	<div class="container-fluid">
 	
 		<div class="row">
 			
