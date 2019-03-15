@@ -463,7 +463,7 @@ SUMA DE TODOS LOS SUBTOTALES
 function sumaSubtotales(){
 
 	var subtotales = $(".subtotales span");
-	var arraySumaSubtotales = [];
+	var arraySumaSubtotales = [0];
 	
 	for(var i = 0; i < subtotales.length; i++){
 
@@ -830,7 +830,7 @@ $("#cambiarDivisa").change(function(){
 
 	$.ajax({
 
-		url: "http://free.currencyconverterapi.com/api/v3/convert?q="+divisaBase+"_"+divisa+"&compact=y",
+		url: "https://free.currencyconverterapi.com/api/v6/convert?q="+divisaBase+"_"+divisa+"&compact=ultra&apiKey=78c54322e250e7e70f8f",
 		type:"GET",
 		cache: false,
 	    contentType: false,
@@ -838,7 +838,9 @@ $("#cambiarDivisa").change(function(){
 	    dataType:"jsonp",
 	    success:function(respuesta){
 	        	
-	    	var conversion = (respuesta["USD_"+divisa]["val"]).toFixed(2);
+	    	// var conversion = (respuesta["USD_"+divisa]["val"]).toFixed(2);
+
+		var conversion = (respuesta["USD_"+divisa]).toFixed(2);
 
 	    	$(".cambioDivisa").html(divisa);
 	    	
