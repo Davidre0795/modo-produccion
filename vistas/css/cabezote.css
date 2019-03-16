@@ -2,6 +2,10 @@
 TOP
 =============================================*/
 
+.registro{
+	display: none;
+}
+
 #top ul{
 	padding-top:8px;
 }
