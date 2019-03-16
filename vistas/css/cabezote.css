@@ -161,6 +161,14 @@ ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
 @media (min-width:1200px){
 
 	/*=============================================
+	TOP
+	=============================================*/
+
+	.registro {
+		display: none;
+	}
+
+	/*=============================================
 	HEADER
 	=============================================*/
 
@@ -186,6 +194,14 @@ ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
 @media (max-width:1199px) and (min-width:992px){
 
 	/*=============================================
+	TOP
+	=============================================*/
+
+	.registro {
+		display: none;
+	}
+
+	/*=============================================
 	HEADER
 	=============================================*/
 
@@ -209,6 +225,15 @@ ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 =============================================*/
 
 @media (max-width:991px) and (min-width:768px){
+
+
+	/*=============================================
+	TOP
+	=============================================*/
+
+	.registro {
+		display: none;
+	}
 
 	/*=============================================
 	HEADER
@@ -242,12 +267,20 @@ MOVIL (XS revisamos en 320px)
 	TOP
 	=============================================*/
 
+	.registro {
+		display: none;
+	}
+	
 	#top ul{
 		text-align: center;
 	}
 
 	#top #registro{
 		border-top:1px solid #222;
+	}
+
+	.registro {
+		display: none;
 	}
 	
 	/*=============================================
