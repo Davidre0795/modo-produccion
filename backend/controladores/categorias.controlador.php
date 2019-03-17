@@ -94,7 +94,7 @@ class ControladorCategorias{
 				VALIDAR IMAGEN OFERTA
 				=============================================*/
 
-				$rutaOferta = "vistas/img/ofertas/default/default.jpg";
+				$rutaOferta = "vistas/img/ofertas/default/no-image.jpg";
 
 				if(isset($_FILES["fotoOferta"]["tmp_name"]) && !empty($_FILES["fotoOferta"]["tmp_name"])){
 
@@ -185,7 +185,7 @@ class ControladorCategorias{
 								   "oferta"=>0,
 								   "precioOferta"=>0,
 								   "descuentoOferta"=>0,
-								   "imgOferta"=>"vistas/img/ofertas/default/default.jpg",								   
+								   "imgOferta"=>"vistas/img/ofertas/default/no-image.jpg",								   
 								   "finOferta"=>"");
 
 
@@ -423,7 +423,7 @@ class ControladorCategorias{
 								   "oferta"=>0,
 								   "precioOferta"=>0,
 								   "descuentoOferta"=>0,
-								   "imgOferta"=>"vistas/img/ofertas/default/default.jpg",								   
+								   "imgOferta"=>"vistas/img/ofertas/default/no-image.jpg",								   
 								   "finOferta"=>"");
 
 					if($_POST["antiguaFotoOferta"] != ""){
