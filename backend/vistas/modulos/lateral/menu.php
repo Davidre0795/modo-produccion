@@ -53,7 +53,7 @@ MENU
 
   <li><a href="visitas"><i class="fa fa-map-marker"></i> <span>Gestor Visitas</span></a></li>
 
-  <li><a href="usuarios"><i class="fa fa-users"></i> <span>Gestor Usuarios</span></a></li>
+  <!-- <li><a href="usuarios"><i class="fa fa-users"></i> <span>Gestor Usuarios</span></a></li> -->
 
   <?php
 
