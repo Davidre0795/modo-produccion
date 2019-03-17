@@ -85,36 +85,27 @@ CAJAS SUPERIORES
 <!--===========================================================================-->
 
 <!-- col -->
-<div class="col-lg-3 col-xs-6">
-  
   <!-- small box -->
-  <div class="small-box bg-yellow">
-    
     <!-- inner -->
-    <div class="inner">
-    
-      <h3><?php echo number_format($totalUsuarios); ?></h3>
-
-      <p>Usuarios</p>
-    
-    </div>
     <!-- inner -->
-
     <!-- icon -->
-    <div class="icon">
-      
-      <i class="ion ion-person-add"></i>
-    
-    </div>
     <!-- icon -->
-
-    <a href="usuarios" class="small-box-footer">Más Info <i class="fa fa-arrow-circle-right"></i></a>
-  
-  </div>
   <!-- small box -->
-
-</div>
 <!-- col -->
+
+<!-- <div class="col-lg-3 col-xs-6">
+  <div class="small-box bg-yellow">
+    <div class="inner">
+      <h3>< ?php echo number_format($totalUsuarios); ?></h3>
+      <p>Usuarios</p>
+    </div>
+    <div class="icon">
+      <i class="ion ion-person-add"></i>
+    </div>
+    <a href="usuarios" class="small-box-footer">Más Info <i class="fa fa-arrow-circle-right"></i></a>
+  </div>
+</div> -->
+
 
 <!--===========================================================================-->
 
