@@ -73,7 +73,7 @@ PÁGINA DE INICIO
             echo ' <div class="col-lg-6">';
          
             include "inicio/grafico-visitas.php";
-            include "inicio/ultimos-usuarios.php";
+            // include "inicio/ultimos-usuarios.php";
 
             echo '</div>'; 
 
@@ -82,7 +82,7 @@ PÁGINA DE INICIO
           echo ' <div class="col-lg-12">';
        
           include "inicio/grafico-visitas.php";
-          include "inicio/ultimos-usuarios.php";
+          // include "inicio/ultimos-usuarios.php";
 
           echo '</div>';
 
