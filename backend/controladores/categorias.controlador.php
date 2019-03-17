@@ -437,6 +437,9 @@ class ControladorCategorias{
 				ModeloSubCategorias::mdlActualizarOfertaSubcategorias("subcategorias", $datos, "ofertadoPorCategoria");	
 				
 				$traerProductos = ModeloProductos::mdlMostrarProductos("productos", "id_categoria", $datos["id"]);
+				
+				$precioOfertaActualizado = 0;
+				$descuentoOfertaActualizado = 0;
 
 				foreach ($traerProductos as $key => $value) {
 					
@@ -474,7 +477,8 @@ class ControladorCategorias{
 						
 					}
 
-					ModeloProductos::mdlActualizarOfertaProductos("productos", $datos, "ofertadoPorCategoria", $precioOfertaActualizado, $descuentoOfertaActualizado, $value["id"]);
+					ModeloProductos::mdlActualizarOfertaProductos("productos", $datos, "ofertadoPorCategoria", $precioOfertaActualizado, $descuentoOfertaActualizado
+										      , $value["id"]);
 
 				}
 
