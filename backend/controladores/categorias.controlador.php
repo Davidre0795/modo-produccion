@@ -440,9 +440,6 @@ class ControladorCategorias{
 
 				foreach ($traerProductos as $key => $value) {
 					
-				$precioOfertaActualizado = 0;
-				$descuentoOfertaActualizado = 0;
-					
 					if($datos["oferta"] != 0 && $datos["precioOferta"] == 0){
 
 						if($value["precio"] != 0){
@@ -477,7 +474,7 @@ class ControladorCategorias{
 						
 					}
 
-					ModeloProductos::mdlActualizarOfertaProductos("productos", $datos, "ofertadoPorCategoria", $precioOfertaActualizado, $descuentoOfertaActualizado, $value["id"]);
+					// ModeloProductos::mdlActualizarOfertaProductos("productos", $datos, "ofertadoPorCategoria", $precioOfertaActualizado, $descuentoOfertaActualizado, $value["id"]);
 
 				}
 
