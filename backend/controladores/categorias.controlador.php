@@ -95,6 +95,7 @@ class ControladorCategorias{
 				=============================================*/
 
 				$rutaOferta = "vistas/img/ofertas/default/default.jpg";
+				// $rutaOferta = "";
 
 				if(isset($_FILES["fotoOferta"]["tmp_name"]) && !empty($_FILES["fotoOferta"]["tmp_name"])){
 
@@ -423,7 +424,7 @@ class ControladorCategorias{
 								   "oferta"=>0,
 								   "precioOferta"=>0,
 								   "descuentoOferta"=>0,
-								   "imgOferta"=>"vistas/img/ofertas/default/default.jpg",								   
+								   "imgOferta"=>"",								   
 								   "finOferta"=>"");
 
 					if($_POST["antiguaFotoOferta"] != ""){
