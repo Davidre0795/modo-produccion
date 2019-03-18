@@ -186,7 +186,7 @@ class ControladorCategorias{
 								   "precioOferta"=>0,
 								   "descuentoOferta"=>0,
 								   "imgOferta"=>"vistas/img/ofertas/default/default.jpg",								   
-								   "finOferta"=>"0000-00-00 00:00:00");
+								   "finOferta"=>"1000-01-01 00:00:00");
 
 
 				}
@@ -424,7 +424,7 @@ class ControladorCategorias{
 								   "precioOferta"=>0,
 								   "descuentoOferta"=>0,
 								   "imgOferta"=>"",								   
-								   "finOferta"=>"0000-00-00 00:00:00");
+								   "finOferta"=>"1000-01-01 00:00:00");
 
 					if($_POST["antiguaFotoOferta"] != ""){
 
