@@ -94,8 +94,7 @@ class ControladorCategorias{
 				VALIDAR IMAGEN OFERTA
 				=============================================*/
 
-				$rutaOferta = "vistas/img/ofertas/default/default.jpg";
-				// $rutaOferta = "";
+				$rutaOferta = "";
 
 				if(isset($_FILES["fotoOferta"]["tmp_name"]) && !empty($_FILES["fotoOferta"]["tmp_name"])){
 
