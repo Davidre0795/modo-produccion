@@ -54,7 +54,7 @@ PÁGINA DE INICIO
           echo '<div class="col-lg-6">';
        
           include "inicio/grafico-ventas.php";
-          include "inicio/productos-mas-vendidos.php";
+          // include "inicio/productos-mas-vendidos.php";
 
           echo '</div>';
 
