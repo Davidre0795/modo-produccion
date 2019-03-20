@@ -296,23 +296,25 @@ JAVASCRIPT PERSONALIZADO
 https://developers.facebook.com/
 ======================================-->
 
-<?php echo $plantilla["apiFacebook"]; ?>
+<!-- < ?php echo $plantilla["apiFacebook"]; ?> -->
 
-<script>
+<!-- <script> -->
+
+	<!--
 
   /*=============================================
 	COMPARTIR EN FACEBOOK
 	https://developers.facebook.com/docs/      
 	=============================================*/
 	
-	$(".btnFacebook").click(function(){
+	 $(".btnFacebook").click(function(){
 
-		FB.ui({
+	 	FB.ui({
 
-			method: 'share',
-			display: 'popup',
-			href: '<?php  echo $url.$cabeceras["ruta"];  ?>',
-		}, function(response){});
+	 		method: 'share',
+	 		display: 'popup',
+	 		href: '< ?php  echo $url.$cabeceras["ruta"];  ?>',
+	}, function(response){});
 
 	})
 
@@ -323,18 +325,18 @@ https://developers.facebook.com/
 
 	$(".btnGoogle").click(function(){
 
-		window.open(
+	window.open(
 
-			'https://plus.google.com/share?url=<?php  echo $url.$cabeceras["ruta"];  ?>',
-			'',
+		'https://plus.google.com/share?url=< ?php  echo $url.$cabeceras["ruta"];  ?>',
+		'',
 			'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=400'
-		);
+	);
 
-		return false;
+	return false;
 
-	})
+	}) -->
 
-</script>
+<!-- </script> -->
 
 	<!-- /*=============================================
 		GOOGLE ANALYTICS
