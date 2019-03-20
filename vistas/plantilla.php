@@ -340,7 +340,7 @@ https://developers.facebook.com/
 		GOOGLE ANALYTICS
 	======================================*/ -->
 
-	<?php echo $plantilla["googleAnalytics"]; ?>
+	<!-- < ?php echo $plantilla["googleAnalytics"]; ?> -->
 
 
 
