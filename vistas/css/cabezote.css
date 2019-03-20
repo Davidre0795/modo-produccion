@@ -6,6 +6,8 @@ TOP
 	display: none;
 }
 
+#carrito 
+
 #top ul{
 	padding-top:8px;
 }
@@ -30,6 +32,10 @@ TOP
 /*=============================================
 HEADER
 =============================================*/
+
+header #carrito{
+	display: none;
+}
 
 header #btnCategorias{
 	margin:20px 0;
