@@ -2,6 +2,10 @@
 FOOTER
 =============================================*/
 
+.formContacto{
+	display: none;
+}
+
 footer{
 	margin-top:20px;
 	border-top:8px solid #999;
