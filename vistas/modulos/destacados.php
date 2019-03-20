@@ -69,7 +69,9 @@ $vistas = ControladorProductos::ctrMostrarProductos($ordenar, $item, $valor, $ba
 
 $modulos = array($gratis, $ventas, $vistas);
 
-for($i = 0; $i < count($titulosModulos); $i ++){
+// for($i = 0; $i < count($titulosModulos); $i ++){ -> Productos Gratuitos
+
+for($i = 1; $i < count($titulosModulos); $i ++){
 
 	echo '<div class="container-fluid well well-sm barraProductos">
 
