@@ -28,7 +28,7 @@ class ModeloSlide{
 
 	static public function mdlCrearSlide($tabla, $datos, $orden){
 
-		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(imgFondo, tipoSlide, estiloTextoSlide, titulo1, titulo2, titulo3, boton, url, orden) VALUES (:imgFondo, :tipoSlide, :estiloTextoSlide, :titulo1, :titulo2, :titulo3, :boton, :url, :orden)");
+		$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(nombre,imgFondo, tipoSlide, estiloTextoSlide, titulo1, titulo2, titulo3, boton, url, orden) VALUES (:nombre, :imgFondo, :tipoSlide, :estiloTextoSlide, :titulo1, :titulo2, :titulo3, :boton, :url, :orden)");
 
 		$stmt->bindParam(":imgFondo", $datos["imgFondo"], PDO::PARAM_STR);
 		$stmt->bindParam(":tipoSlide", $datos["tipoSlide"], PDO::PARAM_STR); 
@@ -38,6 +38,7 @@ class ModeloSlide{
  		$stmt->bindParam(":titulo3", $datos["titulo3"], PDO::PARAM_STR);
 		$stmt->bindParam(":boton", $datos["boton"], PDO::PARAM_STR);
 		$stmt->bindParam(":url", $datos["url"], PDO::PARAM_STR);
+		$stmt->bindParam(":nombre", $datos["nombre"], PDO::PARAM_STR);
 		$stmt->bindParam(":orden", $orden, PDO::PARAM_STR);
 
 		if($stmt->execute()){
