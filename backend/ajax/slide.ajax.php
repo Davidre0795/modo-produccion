@@ -36,7 +36,8 @@ class AjaxSlide{
 						"titulo3"=>$this->titulo3,
 						"boton"=>$this->boton,
 						"url"=>$this->url,
-						"nombre"=>$this->nombre);
+						"nombre"=>$this->nombre,
+						"imgProducto"=>$this->imgProducto);
 
 		$respuesta = ControladorSlide::ctrCrearSlide($datos);
 
@@ -102,7 +103,8 @@ if(isset($_POST["crearSlide"])){
 	$crearSlide -> titulo3 = $_POST["titulo3"];
 	$crearSlide -> boton = $_POST["boton"];
 	$crearSlide -> url = $_POST["url"];
-	$crearSlide -> nombre = 'SLIDE';
+	$crearSlide -> nombre = "SLIDE";
+	$crearSlide -> imgProducto = "vistas/img/slide/default/fondo.jpg";
 	$crearSlide -> ajaxCrearSlide();
 
 }
