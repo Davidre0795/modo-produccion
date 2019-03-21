@@ -105,7 +105,7 @@ if(isset($_POST["crearSlide"])){
 	$crearSlide -> boton = $_POST["boton"];
 	$crearSlide -> url = $_POST["url"];
 	$crearSlide -> nombre = "SLIDE";
-	$crearSlide -> imgProducto = "vistas/img/slide/default/fondo.jpg";
+	$crearSlide -> imgProducto = "";
 	$crearSlide -> estiloImgProducto = '{"top":"","right":"","left":"","width":""}';
 	$crearSlide -> ajaxCrearSlide();
 
