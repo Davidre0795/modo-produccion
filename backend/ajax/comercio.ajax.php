@@ -64,6 +64,32 @@ class AjaxComercio{
 	}
 
 	/*=============================================
+	CAMBIAR CONTACTO
+	=============================================*/
+
+	public $phone_number;
+	public $email;
+	public $address;
+	public $city;	
+	public $country;
+	public $map;	
+
+	public function ajaxCambiarContacto(){
+
+		$datos = array("phone_number"=>$this->phone_number,
+					   "email"=>$this->email,
+					   "address"=>$this->address,
+					   "city"=>$this->city,
+					   "country"=>$this->country,
+					   "map"=>$this->map);
+
+		$respuesta = ControladorComercio::ctrActualizarContacto($datos);
+
+		echo $respuesta;
+
+	}
+
+	/*=============================================
 	CAMBIAR REDES SOCIALES
 	=============================================*/
 
@@ -179,6 +205,23 @@ if(isset($_POST["barraSuperior"])){
 
 }
 
+/*=============================================
+CAMBIAR COLORES
+=============================================*/	
+
+if(isset($_POST["phone_number"])){
+
+	$contacto = new AjaxComercio();
+	$contacto -> phone_number = $_POST["phone_number"];
+	$contacto -> email = $_POST["email"];
+	$contacto -> address = $_POST["address"];
+	$contacto -> city = $_POST["city"];
+	$contacto -> country = $_POST["country"];
+	$contacto -> map = $_POST["map"];
+	$contacto -> ajaxCambiarContacto();
+
+}
+
 
 /*=============================================
 CAMBIAR REDES SOCIALES
@@ -203,30 +246,6 @@ if(isset($_POST["apiFacebook"])){
 	$script -> pixelFacebook = $_POST["pixelFacebook"];
 	$script -> googleAnalytics = $_POST["googleAnalytics"];
 	$script -> ajaxCambiarScript();
-
-}
-
-/*=============================================
-CAMBIAR INFORMACION
-=============================================*/	
-
-if(isset($_POST["impuesto"])){
-
-	$informacion = new AjaxComercio();
-	$informacion -> impuesto = $_POST["impuesto"];
-	$informacion -> envioNacional = $_POST["envioNacional"];
-	$informacion -> envioInternacional = $_POST["envioInternacional"];
-	$informacion -> tasaMinimaNal = $_POST["tasaMinimaNal"];
-	$informacion -> tasaMinimaInt = $_POST["tasaMinimaInt"];
-	$informacion -> seleccionarPais = $_POST["seleccionarPais"];
-	$informacion -> modoPaypal = $_POST["modoPaypal"];
-	$informacion -> clienteIdPaypal = $_POST["clienteIdPaypal"];
-	$informacion -> llaveSecretaPaypal = $_POST["llaveSecretaPaypal"];
-	$informacion -> modoPayu = $_POST["modoPayu"];
-	$informacion -> merchantIdPayu = $_POST["merchantIdPayu"];
-	$informacion -> accountIdPayu = $_POST["accountIdPayu"];
-	$informacion -> apiKeyPayu = $_POST["apiKeyPayu"];
-	$informacion -> ajaxCambiarInformacion();
 
 }
 
