@@ -194,7 +194,7 @@ INFOPRODUCTOS
 
 							<p class="subTotal'.$infoproducto["id"].' subtotales">
 						
-								<strong>USD $<span>'.$infoproducto["precio"].'</span></strong>
+								<strong>MX $<span>'.$infoproducto["precio"].'</span></strong>
 
 							</p>
 
@@ -207,7 +207,7 @@ INFOPRODUCTOS
 
 							<p class="subTotal'.$infoproducto["id"].' subtotales">
 						
-								<strong>USD $<span>'.$infoproducto["precioOferta"].'</span></strong>
+								<strong>MX $<span>'.$infoproducto["precioOferta"].'</span></strong>
 
 							</p>
 
@@ -310,7 +310,7 @@ INFOPRODUCTOS
 
 						if($infoproducto["oferta"] == 0){
 
-							echo '<h2 class="text-muted">USD $'.$infoproducto["precio"].'</h2>';
+							echo '<h2 class="text-muted">MX $'.$infoproducto["precio"].'</h2>';
 
 						}else{
 
@@ -318,7 +318,7 @@ INFOPRODUCTOS
 
 								<span>
 								
-									<strong class="oferta">USD $'.$infoproducto["precio"].'</strong>
+									<strong class="oferta">MX $'.$infoproducto["precio"].'</strong>
 
 								</span>
 
@@ -1208,7 +1208,7 @@ ARTÏCULOS RELACIONADOS
 
 										<small>
 					
-											<strong class="oferta">USD $'.$value["precio"].'</strong>
+											<strong class="oferta">MX $'.$value["precio"].'</strong>
 
 										</small>
 
@@ -1218,7 +1218,7 @@ ARTÏCULOS RELACIONADOS
 
 							}else{
 
-								echo '<h2><small>USD $'.$value["precio"].'</small></h2>';
+								echo '<h2><small>MX $'.$value["precio"].'</small></h2>';
 
 							}
 							
@@ -1396,22 +1396,22 @@ VENTANA MODAL PARA CHECKOUT
 								
 								<tr>
 									<td>Subtotal</td>	
-									<td><span class="cambioDivisa">USD</span> $<span class="valorSubtotal" valor="0">0</span></td>	
+									<td><span class="cambioDivisa">MX</span> $<span class="valorSubtotal" valor="0">0</span></td>	
 								</tr>
 
 								<tr>
 									<td>Envío</td>	
-									<td><span class="cambioDivisa">USD</span> $<span class="valorTotalEnvio" valor="0">0</span></td>	
+									<td><span class="cambioDivisa">MX</span> $<span class="valorTotalEnvio" valor="0">0</span></td>	
 								</tr>
 
 								<tr>
 									<td>Impuesto</td>	
-									<td><span class="cambioDivisa">USD</span> $<span class="valorTotalImpuesto" valor="0">0</span></td>	
+									<td><span class="cambioDivisa">MX</span> $<span class="valorTotalImpuesto" valor="0">0</span></td>	
 								</tr>
 
 								<tr>
 									<td><strong>Total</strong></td>	
-									<td><strong><span class="cambioDivisa">USD</span> $<span class="valorTotalCompra" valor="0">0</span></strong></td>	
+									<td><strong><span class="cambioDivisa">MX</span> $<span class="valorTotalCompra" valor="0">0</span></strong></td>	
 								</tr>
 
 							</tbody>	
