@@ -77,6 +77,37 @@ class ModeloComercio{
 
 	}
 
+ 	/*=============================================
+	ACTUALIZAR COLORES
+	=============================================*/
+
+	static public function mdlActualizarContacto($tabla, $id, $datos){
+
+		$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET phone_number = :phone_number, email = :email, address = :address, city = :city, country = :country, map = :map  WHERE id = :id");
+
+		$stmt->bindParam(":phone_number", $datos["phone_number"], PDO::PARAM_STR);
+		$stmt->bindParam(":email", $datos["email"], PDO::PARAM_STR);
+		$stmt->bindParam(":address", $datos["address"], PDO::PARAM_STR);
+		$stmt->bindParam(":city", $datos["city"], PDO::PARAM_STR);
+		$stmt->bindParam(":country", $datos["country"], PDO::PARAM_STR);
+		$stmt->bindParam(":map", $datos["map"], PDO::PARAM_STR);
+		$stmt->bindParam(":id", $id, PDO::PARAM_INT);
+
+		if($stmt->execute()){
+
+			return "ok";
+
+		}else{
+
+			return "error";
+		
+		}
+
+		$stmt->close();
+		$stmt = null;
+
+	}
+
 	/*=============================================
 	ACTUALIZAR SCRIPT
 	=============================================*/
