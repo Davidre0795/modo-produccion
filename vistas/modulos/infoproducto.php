@@ -140,7 +140,7 @@ INFOPRODUCTOS
 				COMPARTIR EN REDES SOCIALES
 				======================================-->
 
-				<div class="col-xs-6">
+				<!-- <div class="col-xs-6">
 					
 					<h6>
 						
@@ -170,7 +170,7 @@ INFOPRODUCTOS
 
 					</h6>
 
-				</div>
+				</div> -->
 
 				<div class="clearfix"></div>
 
@@ -462,10 +462,10 @@ INFOPRODUCTOS
 								<span class="label label-default" style="font-weight:100">
 
 									<i class="fa fa-clock-o" style="margin-right:5px"></i>
-									Entrega inmediata | 
-									<i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
-									'.$infoproducto["ventasGratis"].' inscritos |
-									<i class="fa fa-eye" style="margin:0px 5px"></i>
+									Entrega inmediata | ';
+									// <i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
+									// '.$infoproducto["ventasGratis"].' inscritos |
+								echo	'<i class="fa fa-eye" style="margin:0px 5px"></i>
 									Visto por <span class="vistas" tipo="'.$infoproducto["precio"].'">'.$infoproducto["vistasGratis"].'</span> personas
 
 								</span>
@@ -479,10 +479,10 @@ INFOPRODUCTOS
 								<small>
 
 									<i class="fa fa-clock-o" style="margin-right:5px"></i>
-									Entrega inmediata <br>
-									<i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
-									'.$infoproducto["ventasGratis"].' inscritos <br>
-									<i class="fa fa-eye" style="margin:0px 5px"></i>
+									Entrega inmediata <br>';
+									// <i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
+									// '.$infoproducto["ventasGratis"].' inscritos <br>
+									echo '<i class="fa fa-eye" style="margin:0px 5px"></i>
 									Visto por <span class="vistas" tipo="'.$infoproducto["precio"].'">'.$infoproducto["vistasGratis"].'</span> personas
 
 								</small>
@@ -498,10 +498,10 @@ INFOPRODUCTOS
 								<span class="label label-default" style="font-weight:100">
 
 									<i class="fa fa-clock-o" style="margin-right:5px"></i>
-									Entrega inmediata |
-									<i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
-									'.$infoproducto["ventas"].' ventas |
-									<i class="fa fa-eye" style="margin:0px 5px"></i>
+									Entrega inmediata |';
+									// <i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
+									// '.$infoproducto["ventas"].' ventas |
+									echo '<i class="fa fa-eye" style="margin:0px 5px"></i>
 									Visto por <span class="vistas" tipo="'.$infoproducto["precio"].'">'.$infoproducto["vistas"].' </span> personas
 
 								</span>
@@ -515,10 +515,10 @@ INFOPRODUCTOS
 								<small>
 
 									<i class="fa fa-clock-o" style="margin-right:5px"></i>
-									Entrega inmediata <br> 
-									<i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
-									'.$infoproducto["ventas"].' ventas <br>
-									<i class="fa fa-eye" style="margin:0px 5px"></i>
+									Entrega inmediata <br>';
+									// <i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
+									// '.$infoproducto["ventas"].' ventas <br>
+									echo '<i class="fa fa-eye" style="margin:0px 5px"></i>
 									Visto por <span class="vistas" tipo="'.$infoproducto["precio"].'">'.$infoproducto["vistas"].'</span> personas
 
 								</small>
@@ -538,10 +538,10 @@ INFOPRODUCTOS
 								<span class="label label-default" style="font-weight:100">
 								
 									<i class="fa fa-clock-o" style="margin-right:5px"></i>
-									'.$infoproducto["entrega"].' días hábiles para la entrega  |
-									<i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
-									'.$infoproducto["ventasGratis"].' solicitudes  |
-									<i class="fa fa-eye" style="margin:0px 5px"></i>
+									'.$infoproducto["entrega"].' días hábiles para la entrega  |';
+									// <i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
+									// '.$infoproducto["ventasGratis"].' solicitudes  |
+									echo '<i class="fa fa-eye" style="margin:0px 5px"></i>
 									Visto por <span class="vistas" tipo="'.$infoproducto["precio"].'">'.$infoproducto["vistasGratis"].'</span> personas  
 
 								</span>
@@ -555,10 +555,10 @@ INFOPRODUCTOS
 								<small>
 								
 									<i class="fa fa-clock-o" style="margin-right:5px"></i>
-									'.$infoproducto["entrega"].' días hábiles para la entrega  <br>
-									<i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
-									'.$infoproducto["ventasGratis"].' solicitudes  <br>
-									<i class="fa fa-eye" style="margin:0px 5px"></i>
+									'.$infoproducto["entrega"].' días hábiles para la entrega  <br>';
+									// <i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
+									// '.$infoproducto["ventasGratis"].' solicitudes  <br>
+									echo '<i class="fa fa-eye" style="margin:0px 5px"></i>
 									Visto por <span class="vistas" tipo="'.$infoproducto["precio"].'">'.$infoproducto["vistasGratis"].' </span> personas 
 
 								</small>
@@ -574,10 +574,10 @@ INFOPRODUCTOS
 								<span class="label label-default" style="font-weight:100">
 
 									<i class="fa fa-clock-o" style="margin-right:5px"></i>
-									'.$infoproducto["entrega"].' días hábiles para la entrega |
-									<i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
-									'.$infoproducto["ventas"].' ventas |
-									<i class="fa fa-eye" style="margin:0px 5px"></i>
+									'.$infoproducto["entrega"].' días hábiles para la entrega |';
+									// <i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
+									// '.$infoproducto["ventas"].' ventas |
+									echo '<i class="fa fa-eye" style="margin:0px 5px"></i>
 									Visto por <span class="vistas" tipo="'.$infoproducto["precio"].'">'.$infoproducto["vistas"].' </span> personas
 
 								</span>
@@ -591,10 +591,10 @@ INFOPRODUCTOS
 								<small>
 
 									<i class="fa fa-clock-o" style="margin-right:5px"></i>
-									'.$infoproducto["entrega"].' días hábiles para la entrega <br>
-									<i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
-									'.$infoproducto["ventas"].' ventas <br>
-									<i class="fa fa-eye" style="margin:0px 5px"></i>
+									'.$infoproducto["entrega"].' días hábiles para la entrega <br>';
+									// <i class="fa fa-shopping-cart" style="margin:0px 5px"></i>
+									// '.$infoproducto["ventas"].' ventas <br>
+									echo '<i class="fa fa-eye" style="margin:0px 5px"></i>
 									Visto por <span class="vistas" tipo="'.$infoproducto["precio"].'">'.$infoproducto["vistas"].'</span> personas
 
 								</small>
@@ -613,9 +613,9 @@ INFOPRODUCTOS
 				BOTONES DE COMPRA
 				======================================-->
 
-				<div class="row botonesCompra">
+				<!-- <div class="row botonesCompra">
 
-				<?php
+				< ?php
 
 					if($infoproducto["precio"]==0){
 
@@ -729,7 +729,7 @@ INFOPRODUCTOS
 
 				?>
 
-				</div>
+				</div> -->
 				
 				<!--=====================================
 				ZONA DE LUPA
@@ -751,9 +751,9 @@ INFOPRODUCTOS
 
 		<br>
 
-		<div class="row">
+		<!-- <div class="row">
 
-			<?php
+			< ?php
 
 			$datos = array("idUsuario"=>"",
 						   "idProducto"=>$infoproducto["id"]);
@@ -774,7 +774,7 @@ INFOPRODUCTOS
 			
 			<ul class="nav nav-tabs">
 
-			<?php
+			< ?php
 
 				$cantidadCalificacion = 0;
 
@@ -920,9 +920,9 @@ INFOPRODUCTOS
 
 		</div>
 
-		<div class="row comentarios">
+		<div class="row comentarios"> -->
 
-		<?php
+		<!-- < ?php
 
 		foreach ($comentarios as $key => $value) {
 			
@@ -1061,7 +1061,7 @@ INFOPRODUCTOS
 			}
 		}
 
-		?>
+		?> -->
 
 		</div>
 
@@ -1228,35 +1228,35 @@ ARTÏCULOS RELACIONADOS
 
 						<div class="col-xs-6 enlaces">
 							
-							<div class="btn-group pull-right">
+							<div class="btn-group pull-right">';
 								
-								<button type="button" class="btn btn-default btn-xs deseos" idProducto="'.$value["id"].'" data-toggle="tooltip" title="Agregar a mi lista de deseos">
+								// <button type="button" class="btn btn-default btn-xs deseos" idProducto="'.$value["id"].'" data-toggle="tooltip" title="Agregar a mi lista de deseos">
 									
-									<i class="fa fa-heart" aria-hidden="true"></i>
+								// 	<i class="fa fa-heart" aria-hidden="true"></i>
 
-								</button>';
+								// </button>';
 
-								if($value["tipo"] == "virtual" && $value["precio"] != 0){
+								// if($value["tipo"] == "virtual" && $value["precio"] != 0){
 
-									if($value["oferta"] != 0){
+								// 	if($value["oferta"] != 0){
 
-										echo '<button type="button" class="btn btn-default btn-xs agregarCarrito"  idProducto="'.$value["id"].'" imagen="'.$servidor.$value["portada"].'" titulo="'.$value["titulo"].'" precio="'.$value["precioOferta"].'" tipo="'.$value["tipo"].'" peso="'.$value["peso"].'" data-toggle="tooltip" title="Agregar al carrito de compras">
+								// 		echo '<button type="button" class="btn btn-default btn-xs agregarCarrito"  idProducto="'.$value["id"].'" imagen="'.$servidor.$value["portada"].'" titulo="'.$value["titulo"].'" precio="'.$value["precioOferta"].'" tipo="'.$value["tipo"].'" peso="'.$value["peso"].'" data-toggle="tooltip" title="Agregar al carrito de compras">
 
-										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								// 		<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 
-										</button>';
+								// 		</button>';
 
-									}else{
+								// 	}else{
 
-										echo '<button type="button" class="btn btn-default btn-xs agregarCarrito"  idProducto="'.$value["id"].'" imagen="'.$servidor.$value["portada"].'" titulo="'.$value["titulo"].'" precio="'.$value["precio"].'" tipo="'.$value["tipo"].'" peso="'.$value["peso"].'" data-toggle="tooltip" title="Agregar al carrito de compras">
+								// 		echo '<button type="button" class="btn btn-default btn-xs agregarCarrito"  idProducto="'.$value["id"].'" imagen="'.$servidor.$value["portada"].'" titulo="'.$value["titulo"].'" precio="'.$value["precio"].'" tipo="'.$value["tipo"].'" peso="'.$value["peso"].'" data-toggle="tooltip" title="Agregar al carrito de compras">
 
-										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								// 		<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 
-										</button>';
+								// 		</button>';
 
-									}
+								// 	}
 
-								}
+								// }
 
 								echo '<a href="'.$url.$value["ruta"].'" class="pixelProducto">
 								
