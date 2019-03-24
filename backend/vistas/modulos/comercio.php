@@ -54,7 +54,7 @@ return;
         ADMINISTRAR COLORES
         ======================================*/
   
-        include "comercio/colores.php";
+        // include "comercio/colores.php";
 
         /*=====================================
         ADMINISTRAR REDES SOCIALES
@@ -74,18 +74,22 @@ return;
       ======================================-->
 
         <?php
+
+        include "comercio/colores.php";
+
+        include "comercio/datoscontacto.php";
         
        /*=====================================
         ADMINISTRAR CÓDIGOS
         ======================================*/
   
-        include "comercio/codigos.php";
+        // include "comercio/codigos.php";
 
         /*=====================================
         ADMINISTRAR COMERCIO
         ======================================*/
   
-        include "comercio/informacion.php";
+        // include "comercio/informacion.php";
 
         ?>
    
