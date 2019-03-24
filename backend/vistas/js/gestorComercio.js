@@ -621,5 +621,60 @@ function cambiarInformacion(modoPaypal, modoPayu){
 }
 
 
+/*=============================================
+CAMBIAR INFORMACION DE CONTACTO
+=============================================*/
+
+$(".cambioContacto").change(function(){
+
+	phone_number = $("#phone_number").val();
+	email = $("#email").val();
+	address = $("#address").val();
+	city = $("#city").val();
+	country = $("#country").val();
+	map = $("#map").val();
+
+	$("#guardarContacto").click(function(){
+
+		var datos = new FormData();
+		datos.append("phone_number", phone_number);
+		datos.append("email", email);
+		datos.append("address", address);
+		datos.append("city", city);
+		datos.append("country", country);
+		datos.append("map", map);
+
+
+		$.ajax({
+
+			url:"ajax/comercio.ajax.php",
+			method: "POST",
+			data: datos,
+			cache: false,
+			contentType: false,
+			processData: false,
+			success: function(respuesta){
+				console.log("respuesta", respuesta);
+				
+				if(respuesta == "ok"){
+
+					swal({
+				      title: "Cambios guardados",
+				      text: "¡La plantilla ha sido actualizada correctamente!",
+				      type: "success",
+				      confirmButtonText: "¡Cerrar!"
+				    });
+			
+				}
+
+
+			}
+
+		})
+
+	})
+
+})
+
 
 
