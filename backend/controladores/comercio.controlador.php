@@ -149,6 +149,23 @@ class ControladorComercio{
 
 	}
 
+
+	/*=============================================
+	ACTUALIZAR CONTACTO
+	=============================================*/
+
+	static public function ctrActualizarContacto($datos){
+
+		$tabla = "plantilla";
+		$id = 1;
+
+		$respuesta = ModeloComercio::mdlActualizarContacto($tabla, $id, $datos);
+
+		return $respuesta;
+
+
+	}
+
 	/*=============================================
 	ACTUALIZAR SCRIPT
 	=============================================*/
