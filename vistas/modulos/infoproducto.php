@@ -1518,4 +1518,4 @@ if($infoproducto["tipo"] == "fisico"){
 
 }
 
-?>
+?> 
