@@ -212,7 +212,7 @@ for($i = 1; $i < count($titulosModulos); $i ++){
 
 											<small>
 						
-												<strong class="oferta">USD $'.$value["precio"].'</strong>
+												<strong class="oferta">MX $'.$value["precio"].'</strong>
 
 											</small>
 
@@ -222,7 +222,7 @@ for($i = 1; $i < count($titulosModulos); $i ++){
 
 								}else{
 
-									echo '<h2><small>USD $'.$value["precio"].'</small></h2>';
+									echo '<h2><small>MX $'.$value["precio"].'</small></h2>';
 
 								}
 								
@@ -351,7 +351,7 @@ for($i = 1; $i < count($titulosModulos); $i ++){
 
 											<small>
 						
-												<strong class="oferta">USD $'.$value["precio"].'</strong>
+												<strong class="oferta">MX $'.$value["precio"].'</strong>
 
 											</small>
 
@@ -361,7 +361,7 @@ for($i = 1; $i < count($titulosModulos); $i ++){
 
 								}else{
 
-									echo '<h2><small>USD $'.$value["precio"].'</small></h2>';
+									echo '<h2><small>MX $'.$value["precio"].'</small></h2>';
 
 								}
 								
