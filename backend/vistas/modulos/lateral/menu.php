@@ -41,7 +41,7 @@ MENU
 
   <li><a href="banner"><i class="fa fa-map-o"></i> <span>Gestor Banner</span></a></li>
 
-  <?php
+  <!-- < ?php
 
   if($_SESSION["perfil"] == "administrador"){
 
@@ -49,9 +49,9 @@ MENU
 
   }
 
-  ?>
+  ?> -->
 
-  <li><a href="visitas"><i class="fa fa-map-marker"></i> <span>Gestor Visitas</span></a></li>
+  <!-- <li><a href="visitas"><i class="fa fa-map-marker"></i> <span>Gestor Visitas</span></a></li> -->
 
   <!-- <li><a href="usuarios"><i class="fa fa-users"></i> <span>Gestor Usuarios</span></a></li> -->
 
