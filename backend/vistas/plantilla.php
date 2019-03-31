@@ -190,7 +190,7 @@ session_start();
      FOOTER
      =============================================*/
 
-     include "modulos/footer.php";
+    //  include "modulos/footer.php";
 
 
     echo '</div>';
