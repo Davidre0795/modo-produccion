@@ -94,7 +94,7 @@ PÁGINA DE INICIO
 
         <?php
 
-        include "inicio/productos-recientes.php";
+        // include "inicio/productos-recientes.php";
 
         ?>
 
